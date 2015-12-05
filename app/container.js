@@ -5,7 +5,13 @@ const Pong = require('./components/pong')
 
 const Container = React.createClass({
   render: function () {
-    return <Pong { ...this.props } />
+    const { computer, player, ball } = this.props
+
+    return <Pong
+      computer={computer}
+      player={player}
+      ball={ball}
+    />
   }
 })
 
