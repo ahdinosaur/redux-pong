@@ -2,7 +2,11 @@ const React = require('react')
 
 const Pong = React.createClass({
   render: function () {
-    return <div>hey!</div>
+    return <svg>
+      <rect />
+      <circle />
+      <rect />
+    </svg>
   }
 })
 

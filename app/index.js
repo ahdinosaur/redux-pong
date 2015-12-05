@@ -20,7 +20,7 @@ if (process.env.NODE_ENV === 'development') {
 
   render(
     <Provider store={store} key="provider">
-      <div>
+      <div className="full">
         <Container />
         <DevTools />
       </div>
