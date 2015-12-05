@@ -2,9 +2,10 @@ const React = require('react')
 const { render } = require('react-dom')
 const { Provider } = require('react-redux')
 
+const initialState = require('./state')
 const createStore = require('./store')
 
-const store = createStore()
+const store = createStore(initialState)
 const Container = require('./container')
 
 render(
